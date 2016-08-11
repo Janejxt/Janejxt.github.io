@@ -79,6 +79,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  border-bottom: 1px solid black;
 }
 
 h4 {
@@ -164,7 +165,6 @@ pre, code {
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
-
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -422,4 +422,13 @@ Small Device Styles
     font-size: 11px;
   }
 
+}
+.base_inf {
+  margin-right: 50px;
+}
+.inf {
+  margin-left: 150px;
+}
+.inf_r {
+  margin-left: 50px;
 }
