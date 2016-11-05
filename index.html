@@ -1,103 +1,385 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Janejxt.GitHub.io : my resume">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>Janejxt.GitHub.io</title>
-    <style type="text/css">
-    #header_wrap img {
-        position: absolute;
-        width: 115px;
-        height: 150px;
-        top: 110px;
-        left: 505px;
-    }
-    #main_content .base{
-      line-height: 2;
-    }
-    p {margin:0;}
-
-    </style>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="web前端个人简历" />
+    <meta name="description" content="姜雪婷的web前端工程师个人简历">
+	<link rel="stylesheet" href="stylesheets/reset.css" />
+	<link rel="stylesheet" href="stylesheets/jquery.fullPage.css" />
+	<link rel="stylesheet" href="stylesheets/component.css" />
+	<link rel="stylesheet" href="stylesheets/index.css" />
+	<title>web前端工程师简历</title>
 </head>
-
 <body>
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-            <a id="forkme_banner" href="https://github.com/Janejxt">View on GitHub</a>
-            <h1 id="project_title">姜雪婷的简历</h1>
-            <h2 id="project_tagline">my resume</h2>
-            <img src="images/jxt.png">
-        </header>
+<!-- header navigation -->
+<header>
+	<div id="logo">
+		<div id="header_img"><img src="images/logo.jpg" alt="" /></div>
+		<div id="header_p">
+			<p id="header_p1">Jane姜雪婷</p>
+			<p id="header_p2">个人简历</p>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="">首页</a></li>
+			<li><a href="">随笔</a></li>
+			<li><a href="">积淀</a></li>
+			<li><a href="">关于</a></li>
+		</ul>
+	</nav>
+</header>
+<!-- header navigation end -->
+<!-- aside navigation -->
+<aside>
+		<a href="#page1"><b>首页</b></a>
+		<a href="#page2"><b>关于我</b></a>
+		<a href="#page3"><b>专业技能</b></a>
+		<a href="#page4"><b>我的经历</b></a>
+		<a href="#page5"><b>我的作品</b></a>
+		<a href="#page6"><b>联系我</b></a>
+</aside>
+<!-- aside navigation end -->
+<!-- home page -->
+<div id="dowebok">
+	<!-- home -->
+	<div class="section one">
+		<div id="home">
+			<div id="home_content">
+				<div id="home_head">
+					<div id="home_head_content">
+						<img src="images/photo1.jpg" id="home_photo1" alt="" />
+						<img src="images/photo2.jpg" id="home_photo2" alt="" />
+					</div>
+				</div>
+				<div id="home_info">
+					<p id="home_info1">生活是一种绵延不绝的渴望,渴望不断上升,变得更伟大而高贵。</p>
+					<div id="home_info_box">
+						<p id="home_info2">我叫赵柯宇</p>
+						<p id="home_info3">25岁</p>
+						<p id="home_info4">一名前端研发工程师</p>
+						<p id="home_info5">zhaoky2016@163.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- home end -->
+	<!-- about -->
+	<div class="section two">
+		<div id="about">
+			<div id="about_content">
+				<div class="title">
+					<h1>关于我</h1>
+				</div>
+				<div id="about_list_content">
+					<div class="about_list" id="about_list1">
+						<div class="about_list_eg" id="about_en_edu">education</div>
+						<div class="about_list_cn" id="about_cn_edu">学历<p>本科</p></div>
+					</div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_age">age</div>
+                        <div class="about_list_cn" id="about_cn_age">年龄<p>25岁</p></div>
+                    </div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_loc">location</div>
+                        <div class="about_list_cn" id="about_cn_loc">坐标<p>成都</p></div>
+                    </div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_sta">status</div>
+                        <div class="about_list_cn" id="about_cn_sta">状态<p>在职</p></div>
+                    </div>
+				</div>
+				<div id="about_info"></div>
+			</div>
+		</div>
+	</div>
+    <!-- about end -->
+    <!-- skill -->
+    <div class="section three">
+		<div id="skill">
+			<div id="skill_content">
+				<div class="title">
+					<h1>专业技能</h1>
+				</div>
+				<div id="skill_info"></div>
+                <div id="skill_list">
+                    <div class="skill_list_content" id="skill_list1">
+                        <div class="skill_icon" id="skill_icon1"></div>
+                        <div class="skill_name">AngularJs</div>
+                        <div class="skill_flag"></div>
+                        <div class="skill_int" id="skill_int1"></div>
+                    </div>
+                    <div class="skill_list_content" id="skill_list2">
+                        <div class="skill_icon" id="skill_icon2"></div>
+                        <div class="skill_name">HTML</div>
+                        <div class="skill_flag"></div>
+                        <div class="skill_int" id="skill_int2"></div>
+                    </div>
+                    <div class="skill_list_content" id="skill_list3">
+                        <div class="skill_icon" id="skill_icon3"></div>
+                        <div class="skill_name">CSS</div>
+                        <div class="skill_flag"></div>
+                        <div class="skill_int" id="skill_int3"></div>
+                    </div>
+                    <div class="skill_list_content" id="skill_list4">
+                        <div class="skill_icon" id="skill_icon4"></div>
+                        <div class="skill_name">JavaScript</div>
+                        <div class="skill_flag"></div>
+                        <div class="skill_int" id="skill_int4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-        <section id="main_content" class="inner">
-            <h3>基本信息</h3>
-            <p class="base">
-                <span class="base_inf">性别：女 </span>
-                <span class="base_inf">出生年月：1992.02.09</span>
-                <span class="inf_r">民族：汉 </span>
-                <span class="inf_r">政治面貌：中共党员</span>
-                <span class="base_inf">联系方式：15295532162</span>
-                <span class="inf">电子邮件：15295532162@163.com</span>
-            </p>
-            <h3>求职意向与自我评价</h3>
-            <p>
-              <p style="margin-bottom: 0"><strong>期望从事职业：</strong>web前端开发工程师</p>
-              <p style="margin-bottom: 0"><strong>自我评价：</strong>吃苦耐劳，有团队合作精神，喜爱前端开发，基础扎实，专业知识学的较好。</p>
-            </p>
-            <h3>教育经历</h3>
-            <p >
-              <p style="margin-bottom: 0">
-              <span>2014.9~至今</span>
-              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>河海大学</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>计算机科学与技术专业</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>硕士研究生</strong>
-              </span>
-              </p>
-              <pre style="background-color: transparent;box-shadow: 0 0 0 rgba(0,0,0,0);">               获校学业二等奖学金     优秀研究生干部称号      金水节优秀组织奖
-               2015年 4月           获得中兴UI T-shirt设计大赛三等奖
-               2015年 6月           获得厉动中国指尖上的华尔兹比赛入围奖
-               学术成果:两篇核心已录用待见刊</pre>
-            </p>
-            <p style="margin: 0">
-              <span>2010.9~2014.6</span>
-              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>淮海工学院</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>软件工程</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>本科</strong>
-              </span>
-              </p>
-              <pre style="background-color: transparent;box-shadow: 0 0 0 rgba(0,0,0,0)">               院系排名：前10%     连续4年获得校学业奖学金</pre>
-            </p>
-            <h3>专业技能与英语水平</h3>
-            <p>
-              <p>熟悉HTML+CSS、JavaScript、 会用jQuery、Bootstrap，用过C、C++、C#、Java语言，用过Ajax，了解SQL数据库，了解B/S设计模式等。熟练运用Photoshop。用过git，有自己的git仓库。</p>
-              <p>大学英语六级（CET-6）：469分 ，良好的听说读写能力，能够快速浏览英语专业文件及书籍，计算机专业论文，撰写英文文件，用英语与外国人进行简单交谈等。</p>
-            </p>
-            <h3>项目经历</h3>
-            <p>
-              <p><span><em>项目名称</em></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><em>担任角色</em></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><em>主要工作</em></span></p>
-              <p><strong>Leapcat体感益智游戏 - 厉动中国指尖上的华尔兹比赛</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参与者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015.6</p>
-              <p>在这个比赛中，我们基于体感设备leapmotion，利用Unity3D，开发的一个2D的小益智游戏leapcat，项目中的对象，我们使用了Toolkit精灵，使开发过程更加的便利高效。Leapcat通过玩家对不同的速度和地点出现的cat的正确及时的捕捉来提高玩者的对下一步的预测和控制力。</p>
-              <p><strong>智慧出境游移动应用平台的设计与实现</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参与者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015.12—2016.3</p>
-              <p>一个只是针对科特迪瓦的景区而设计的出境旅游app。我负责的是APP页面的设计。</p>
-              <p><strong>老龄化家庭医疗保健服务系统的设计与实现</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负责人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014.3—2014.5</p>
-              <p>本系统选用的是B/S形式，系统是用.NET开发的，连接数据库时用的是ADO.NET。数据管理系统选用了SQL SEVER 2008。这个系统突出了私人医生的概念。整个系统有医生、求医者和管理员这3个不同的用户身份。针对三种用户身份有三个子系统：家庭医疗保健和医护人员管理系统、家庭医疗求助和服务系统、后台管理系统。本着从用户的角度出发的原则，系统设计以操作简单，界面简洁，功能实用为主。个人独立完成设计与开发实现。</p>
-            </p>
-            <h3>实践经历</h3>
-            <p >
-              <p><strong>2016年 3 月—2016年 7月</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>江苏慧泽信息技术有限公司</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>实习</strong></p>
-              <p>主要工作：跬步App的运营系统的前端开发工作，开始是添加一些新的小功能，后来又重新设计制作了后台界面，我已完成页面制作部分，页面逻辑业务部分实现了大部分，结合html+css+js，同时还用到了jQuery和bootstrop。</p>
-            </p>
-            </p>
-        </section>
+    <!-- skill end -->
+    <!-- experience -->
+    <div class="section four">
+    	<div id="exp">
+        	<div id="exp_content">
+        		<div class="title">
+                	<h1>我的经历</h1>
+                </div>
+                <div id="exp_info" class="exp_scale"></div>
+                <div id="exp_list_slider">
+                	<div id="exp_list_slider_content" class="exp_scale">
+                        <div id="exp_list_content">
+                            <div class="exp_list">
+                                <div class="exp_list_left">
+                               		<div id="exp_list_left1">
+                                        <dl>
+                                            <dt>壹零陆文化传播有限责任公司</dt>
+                                            <dd class="exp_list_time">2014年3月~2014年9月</dd>
+                                            <dd>网络部（实习）</dd>
+                                            <dd>负责网站后台维护，微博、微信等新媒体创意撰写，营销和推广</dd>
+                                            <dd>负责百度PPC后台调整</dd>
+                                            <dd>获得<a href="#" class="md-trigger" data-modal="modal-1">最佳新人奖</a></dd>
+                                            <dd>同期工作之余开始<a href="#" class="md-trigger" data-modal="modal-2">系统性的自学web前端各项技术</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                        	</div>
+                        	<div class="exp_list">
+                                <div class="exp_list_left">
+                                	<div id="exp_list_left2">
+                                        <dl>
+                                            <dt>四川卓煌企业管理有限公司</dt>
+                                            <dd class="exp_list_time">2014年9月~2015年7月</dd>
+                                            <dd>管理部</dd>
+                                            <dd>负责网站后台维护及几个企业公司的官网开发</dd>
+                                            <dd>负责百度竞价操作及seo优化</dd>
+                                            <dd>同期工作之余提升自己原生JS的编码能力</dd>
+                                        </dl>
+                                    </div>
+                            	</div>
+                        	</div>
+                            <div class="exp_list">
+                                <div class="exp_list_left">
+                                    <div id="exp_list_left3">
+                                        <dl>
+                                            <dt>成都兰途网络科技有限公司</dt>
+                                            <dd class="exp_list_time">2015年7月~现在</dd>
+                                            <dd>前端技术部</dd>
+                                            <dd>负责快速构建高质量移动app页面</dd>
+                                            <dd>用less预编译css，gulp进行自动化构建</dd>
+                                            <dd>使用原生JS+angularJS进行前端开发</dd>
+                                            <dd>使用git svn进行版本控制，Phonegap/Cordova进行app打包</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="exp_list_to">
+                    	<div id="exp_list_toleft"><img src="images/exp_list_toleft.png" /></div>
+                    	<div id="exp_list_toright"><img src="images/exp_list_toright.png" /></div>
+                    </div>
+                    </div>
+                    <div id="exp_timeline" class="exp_scale">
+                    	<div>
+                            <a href="#" title="2014年3月~2014年9月"></a>
+                            <a href="#" title="2014年9月~2015年7月"></a>
+                            <a href="#" title="2015年7月~现在"></a>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- experience end -->
+    <!-- demo -->
+    <div class="section five">
+    	<div id="demo">
+        	<div id="demo_content">
+            	<div class="title">
+                	<h1>我的作品</h1>
+                </div>
+                <div id="demo_content_list">
+                    <ul class="demo_box">
+                    	<li class="demo_scale">
+                            <div class="demo_box_content">
+                            	<div class="demo_box_hover">
+                                    <p class="demo_box_title">DEMO:DOM编程艺术</p>
+                                    <span class="demo_box_hover_icon">
+                                        <a href="demo/js原生demo/index.html" target="_blank" class="demo_box_link">
+                                            <img src="images/demo-link.png" alt="" />
+                                        </a>
+                                    </span>
+                                </div>
+                                <img src="images/demo_box1.jpg" alt="" class="demo_box_bg"/>
+                            </div>
+                        </li>
+                        <li class="demo_scale">
+                            <div class="demo_box_content">
+                                <div class="demo_box_hover">
+                                    <p class="demo_box_title">乾程企业</p>
+									<span class="demo_box_hover_icon">
+										<a href="http://www.sctyqc.cn/index.html" target="_blank" class="demo_box_link">
+											<img src="images/demo-link.png" alt="" />
+										</a>
+									</span>
+								</div>
+								<img src="images/demo_box2.jpg" alt="" class="demo_box_bg"/>
+							</div>
+                        </li>
+                        <li class="demo_scale">
+							<div class="demo_box_content">
+                            	<div class="demo_box_hover">
+									<p class="demo_box_title">卓煌企业</p>
+                                    <span class="demo_box_hover_icon">
+                                    	<a href="http://www.sczhuohuang.com" target="_blank" class="demo_box_link">
+											<img src="images/demo-link.png" alt="" />
+                                        </a>
+                                    </span>
+                                </div>
+								<img src="images/demo_box3.jpg" alt="" class="demo_box_bg"/>
+                            </div>
+                        </li>
+                        <li class="demo_scale">
+							<div class="demo_box_content">
+                            	<div class="demo_box_hover">
+                                	<p class="demo_box_title">兰途科技</p>
+                                    <span class="demo_box_hover_icon">
+                                    	<a href="http://www.lantunet.com" target="_blank" class="demo_box_link">
+											<img src="images/demo-link.png" alt="" />
+                                        </a>
+                                    </span>
+                                </div>
+								<img src="images/demo_box4.jpg" alt="" class="demo_box_bg"/>
+                            </div>
+                        </li>
+                    </ul>
+				</div> 
+                <div id="demo_info" class="demo_scale">
+                    <p>这是我的部分demo。</p>
+                    <p>更多demo请移步<a href="#" class="md-trigger" data-modal="modal-3">这里</a>。</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-        <footer class="inner">
-            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-        </footer>
+    <!-- demo end -->
+    <!-- contact -->
+	<div class="section six">
+		<div id="contact">
+			<div id="contact_content">
+				<div class="title">
+					<h1>联系我</h1>
+				</div>
+                <div id="contact_head">
+					<div id="contact_head1">灵感 代码 梦想 未来</div>
+                    <div id="contact_head2">
+                    	<span>inspiration</span>
+                        <span>code</span>
+                        <span>dream</span>
+                        <span>future</span>
+                    </div>
+                </div>
+                <div id="contact_info" class="contact_scale">
+                    <ul></ul>
+                </div>
+                <div id="contact_way">
+					<div id="contact_message1" class="contact_message contact_scale">follow me</div>
+                    <div id="contact_form">
+                        梦想成为前端工程师？<br/>
+                        前端自学迷茫？<br/>
+                        前端面试会问什么？<br/>
+                        想学习该简历怎么制作？<br/><br/>
+                        QQ小群：<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=959d5b7e9bab932c87cdd68372cfefd772293deaeceaba3e015ba35463200fe5">Fe.d小分队</a><br/><br/>
+                        互相学习交流，共同进步O(∩_∩)O~
+                    </div>
+                    <div id="contact_message2" class="contact_message">谢谢</div>
+                </div>
+            </div>
+            <footer class="contact_scale">
+				<div class="contact_scale footer">
+                    <a href="http://blog.csdn.net/zhcscs" target="_blank">CSDN</a>|
+                    <a href="http://weibo.com/zky2013" target="_blank">微博</a>|
+                    <a href="https://www.zhihu.com/people/fezky" target="_blank">知乎</a>|
+                    <a href="https://segmentfault.com/u/keyu2016" target="_blank">豆瓣</a>|
+                    <a href="https://github.com/zhaoky" target="_blank">Github</a>
+                </div>
+				<div class="contact_scale footer">All Rights Reserved&nbsp;</div>
+				<div class="contact_scale footer"><a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备15021330号</a>&nbsp;Copyright &copy; 2015 - 2016</div>
+			</footer>
+        </div>
+	</div>
+    <!-- contact end -->
+</div>
+<!-- home page end -->
+<!-- pop layer -->
+<div class="md-modal md-effect-11" id="modal-1">
+	<div class="md-content">
+		<h3>小黄人O(∩_∩)O~</h3>
+		<div>
+			<img src="images/Minions.jpg" alt="" />
+			<button class="md-close">明白了</button>
+		</div>
+	</div>
+</div>
+<div class="md-modal md-effect-13" id="modal-2">
+	<div class="md-content">
+		<h3>学习路线</h3>
+		<div class="modal-learn">
+           	<p>学习用到的书籍</p>
+            <ul>
+                <li>《html5+css3基础教程（第七版）》</li>
+                <li>《css揭秘》</li>
+                <li>《JavaScript DOM编程艺术（第二版）》</li>
+                <li>《锋利的jQuery（第二版）》</li>
+                <li>《JavaScript高级程序设计（第三版）》</li>
+                <li>《JavaScript权威指南》</li>
+            </ul>
+			<button class="md-close">明白了</button>
+		</div>
+	</div>
+</div>
+<div class="md-modal md-effect-11" id="modal-3">
+    <div class="md-content">
+        <h3>移动APP：兰途校园</h3>
+        <div class="modal-example">
+            <p>已上线学校</p>
+            <ul>
+                <li><span><a href="https://app.cufe.edu.cn/" target="_blank">中央财经大学</a></span></li>
+                <li><span><a href="https://app.bjtu.edu.cn/getapp/" target="_blank">北京交通大学</a></span></li>
+                <li><span><a href="https://bhna.buaa.edu.cn/bhna/" target="_blank">北京航空航天大学</a></span></li>
+                <li><span><a href="https://app.nacta.edu.cn/" target="_blank">中国戏曲学院</a></span></li>
+                <li><span><a href="https://download.haust.edu.cn/haust/getApp/" target="_blank">河南科技大学</a></span></li>
+                <li><span><a href="http://app.bisu.edu.cn/" target="_blank">北京第二外国语大学</a></span></li>
+                <li><span><a href="http://app.swpu.edu.cn/" target="_blank">西南石油大学</a></span></li>
+            </ul>
+            <p>更多在建...</p>
+            <button class="md-close">明白了</button>
+        </div>
     </div>
+</div>
+<div class="md-overlay"></div>
+<!-- pop layer -->
 </body>
-
+<script src="javascripts/jquery-1.11.2.min.js"></script>
+<script src="javascripts/jquery.easing.min.js"></script>
+<script src="javascripts/jquery.fullPage.min.js"></script>
+<script src="javascripts/classie.js"></script>
+<script src="javascripts/cssParser.js"></script>
+<script src="javascripts/modalEffects.js"></script>
+<script src="javascripts/index.js"></script>
 </html>
