@@ -45,13 +45,13 @@ h3{
 }
 @media screen and (max-width:1366px){
 body {
-	font-size: 13px;
+	font-size: 16px;
 }
 h1 {
 	font-size: 24px;
 }
 h2 {
-	font-size: 12px;
+	font-size: 14px;
 }
 .title {
 	margin-top: 60px;
@@ -290,7 +290,7 @@ img#home_photo2 {
 }
 @media screen and (max-width:1366px){
 #home_info1 {
-	font-size: 16px;
+	font-size: 18px;
 }	
 }
 /* about */
@@ -360,7 +360,7 @@ img#home_photo2 {
 .about_list_cn p {
 	padding-top: 10px;
 	text-align: right;
-	font-size: 14px;
+	font-size: 16px;
 }
 .about_list_cn p:before {
 	display: block;
@@ -536,7 +536,7 @@ img#home_photo2 {
 	top: 250px;
 	width: 320px;
 	left: -136px;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 	display: none;
 	border: 1px solid #EABDC2;
@@ -545,7 +545,7 @@ img#home_photo2 {
 	background: #EABDC2;
 }
 .skill_int li {
-	font-size: 12px;
+	font-size: 14px;
 	padding-left: 15px;
 }
 @-webkit-keyframes skill_scale {
@@ -681,7 +681,7 @@ img#home_photo2 {
 }
 .exp_list dd {
 	position: relative;
-	font-size: 14px;
+	font-size: 16px;
 }
 .exp_list dd:before {
 	position: absolute;
@@ -694,7 +694,7 @@ img#home_photo2 {
 	border-radius: 50%;
 }
 .exp_list_time {
-	font-size: 12px !important;
+	font-size: 14px !important;
 	margin-top: -20px;
 	color: #333;
 }
@@ -969,7 +969,7 @@ img#home_photo2 {
 	display: none;
 	text-align: center;
 	padding-top: 80px;
-	font-size: 14px;
+	font-size: 16px;
 }
 #contact_form a {
 	color: #3cf;
