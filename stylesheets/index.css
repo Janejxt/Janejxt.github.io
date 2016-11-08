@@ -106,9 +106,11 @@ header img:hover {
 	padding: 5px 15px;
 	width: 70px;
 	border-bottom: 1px solid #333;
+	cursor: default;
 }
 #header_p2 {
 	padding: 0 15px;
+	cursor: default;
 }
 nav {
 	margin-top: 30px;
@@ -301,7 +303,7 @@ img#home_photo2 {
 	height: 150px;
 	padding: 20px 0;
 	border-radius: 30px;
-	background: #a0a0b4;	
+	background: #EABDC2;	
 }
 .about_list {
 	float: left;
@@ -364,7 +366,7 @@ img#home_photo2 {
 	display: block;
 	content: "";
 	position: absolute;
-	background: #ccc;
+	background: #fff;
 	height: 2px;
 	width: 90px;
 	bottom: 25px;
@@ -389,14 +391,14 @@ img#home_photo2 {
 #about_info:before {
 	top: 0;
 	left: 0;
-	border-top: 2px solid #5686D6;
-	border-left: 2px solid #5686D6;
+	border-top: 2px solid #E59A9F;
+	border-left: 2px solid #E59A9F;
 }
 #about_info:after {
 	bottom: 0;
 	right: 0;
-	border-right: 2px solid #5686D6;
-	border-bottom: 2px solid #5686D6;
+	border-right: 2px solid #E59A9F;
+	border-bottom: 2px solid #E59A9F;
 }
 #about_info p {
 	text-align: center;
@@ -483,21 +485,7 @@ img#home_photo2 {
 	height: 400px;
 	visibility: hidden;
 }
-/*.skill_list_content b {*/
-	/*position: absolute;*/
-	/*top: 3%;*/
-	/*left: -11%;*/
-	/*width: 130%;*/
-	/*height: 40%;*/
-	/*background: #000;*/
-	/*opacity: 0;*/
-	/*-webkit-transition: opacity .2s ease-in-out;*/
-	/*transition: opacity .2s ease-in-out;*/
-	/*cursor: pointer;*/
-/*}*/
-/*.skill_list_content b:hover {*/
-	/*opacity: 0.4;*/
-/*}*/
+
 .skill_icon {
     cursor: pointer;
     background-size: 100%;
@@ -551,10 +539,10 @@ img#home_photo2 {
 	font-size: 14px;
 	line-height: 20px;
 	display: none;
-	border: 1px solid #ccc;
+	border: 1px solid #EABDC2;
 	border-radius: 10px;
 	padding: 15px;
-	background: #c8c8dc;
+	background: #EABDC2;
 }
 .skill_int li {
 	font-size: 12px;

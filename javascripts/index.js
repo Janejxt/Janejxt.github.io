@@ -29,20 +29,21 @@ $(function(){
 		}
 	});
     $('#dowebok').fullpage({
-		scrollingSpeed: 400,
+		scrollingSpeed: 300,
 		css3: true,
 		resize: true,
+		//配置锚点
 		anchors: ["page1","page2","page3","page4","page5","page6"],
 		verticalCentered: false,
-		afterRender: function(){
+		afterRender: function(){//页面初始化完成后的回调函数
 			$("#home").css({"display":"block"}).addClass("home_zoom");
 			$("aside").css({"top":($(".active").height()-$("aside").height())/2});
 			$("header").before("<div id='header' style='opacity:0'></div>");	
 			$("#home_head").css({"margin-top":"100px"});
-			$("header").animate({opacity:"1"},1000,function(){
-				$("#header").css({"opacity":"0.3"});
-				$("#home_info1").fadeIn(700,function(){
-					$(this).next().animate({width:"800px"},700,function(){
+			$("header").animate({opacity:"1"},500,function(){
+				$("#header").css({"opacity":"0.4"});
+				$("#home_info1").fadeIn(600,function(){
+					$(this).next().animate({width:"800px"},600,function(){
 						$("#home_info2").fadeIn(450,function(){
 							$(this).next().fadeIn(450,function(){
 								$(this).next().fadeIn(450,function(){
@@ -58,7 +59,7 @@ $(function(){
 			$("aside a").eq(0).addClass("selected").siblings().removeClass("selected");
 			
 		},
-		afterLoad: function(anchorLink,index){
+		afterLoad: function(anchorLink,index){//滚动到某一屏后的回调函数，接收anchorLink和index两个参数，anchorLink是锚链接的名称。
 			if(index==1){
 				$("aside a").eq(0).addClass("selected").siblings().removeClass("selected");
 			}
@@ -68,11 +69,11 @@ $(function(){
 				$(".title_en").animate({width:"130px"},800,function(){
 					$(".title_en h2").slideDown(400);
 				});
-				$("#about_info").animate({width:"800px",marginTop:"0",marginBottom:"0"},700,'easeOutElastic',function(){
-					$("#about_info p").eq(0).animate({bottom:"0"},700,function(){
-						$("#about_info p").eq(1).animate({bottom:"0"},700,function(){
-							$("#about_info p").eq(2).animate({bottom:"0"},700,function(){
-								$("#about_info p").eq(3).animate({bottom:"0"},700);
+				$("#about_info").animate({width:"800px",marginTop:"0",marginBottom:"0"},600,'easeOutElastic',function(){
+					$("#about_info p").eq(0).animate({bottom:"0"},600,function(){
+						$("#about_info p").eq(1).animate({bottom:"0"},600,function(){
+							$("#about_info p").eq(2).animate({bottom:"0"},600,function(){
+								$("#about_info p").eq(3).animate({bottom:"0"},600);
 							});
 						});
 					});
@@ -152,7 +153,8 @@ $(function(){
 				},70);
 			}
 		},
-		onLeave:function(index){
+		onLeave:function(index){//滚动前的回调函数，接收 index、nextIndex 和 direction 3个参数：index 是离开的“页面”的序号，从1开始计算；
+//nextIndex 是滚动到的“页面”的序号，从1开始计算；direction 判断往上滚动还是往下滚动，值是 up 或 down。
 			if(index==2||index==3||index==4||index==5||index==6){
 				$(".title_en").remove();	
 			}
@@ -164,17 +166,17 @@ $(function(){
 		$("#header_p1").html("Resume");
 		$("#header_p2").html("前端工程师");
 	}).mouseout(function(){
-		$("#header_p1").html("F2E");
+		$("#header_p1").html("姜雪婷");
 		$("#header_p2").html("个人简历");	
 	});
-//顶部导航取消
+//顶部导航回应
 	$("header nav a:not(':first')").click(function(){
 		alert("正在努力建设中...请稍等");
 		return false;
 	});
 //侧边导航文字切换
 	$("aside a").hover(function(){
-		$(this).find("b").fadeToggle(200,"easeInOutCubic");
+		$(this).find("b").fadeToggle(150,"easeInOutCubic");
 	});
 // 头像切换
 	$("#home_photo2").hover(function(){
