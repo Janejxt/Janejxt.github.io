@@ -95,6 +95,7 @@ header img:hover {
 #header_img,
 #header_p {
 	float: left;
+	font-size: 14px;
 }
 #header_p {
 	margin-left: 15px;
@@ -104,7 +105,7 @@ header img:hover {
 #header_p1 {
 	margin: 0px 15px 5px;
 	padding: 5px 15px;
-	width: 70px;
+	width: 80px;
 	border-bottom: 1px solid #333;
 	cursor: default;
 }
